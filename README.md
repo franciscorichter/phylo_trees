@@ -11,7 +11,7 @@ amphibians, and seed plants.
 
 ```bash
 # Clone the repo (includes 218 Condamine family trees + documentation)
-git clone https://github.com/franciscorichter/phylo_trees.git
+git clone https://github.com/franciscorichter/phylo-datasets.git
 cd phylo_trees
 
 # Download the larger trees from their original sources
