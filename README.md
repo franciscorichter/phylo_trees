@@ -483,18 +483,18 @@ Trees available for Insecta (53,596 sp), Coleoptera (2,639), Lepidoptera (11,001
 
 ## Summary
 
-| Dataset | Files | Taxa | Tips (single tree) | Download |
-|---------|-------|------|-------------------|----------|
-| Mammals -- Upham et al. 2019 | 3 | Mammals | 5,912 | Script |
-| Birds -- Jetz et al. 2012 | 1 | Birds | 9,993 x 1,000 trees | Script |
-| Birds -- McTavish et al. 2025 | 4 | Birds | 9,183-10,824 | Script |
-| Frogs -- Portik et al. 2023 | 3 | Frogs | 5,326 | Script |
-| Fish -- Rabosky et al. 2018 | 3 | Ray-finned fish | 11,638-31,516 | Script |
-| Plants -- Smith & Brown 2018 | 6 | Seed plants | 79,874-359,536 | Script |
-| Tetrapods -- Condamine et al. 2019 | 218 | Tetrapod families | 10-680 | Included |
-| Amphibians -- Jetz & Pyron 2018 | 2 | Amphibians | 4,062-7,239 | Manual (Dryad) |
-| Squamates -- Pyron 2013 & Tonini 2016 | 4 | Squamates | 4,162-9,755 | Manual (Dryad) |
-| **Total** | **247** | | | |
+| Dataset | Files | Taxa | Tips |
+|---------|-------|------|------|
+| Mammals -- Upham et al. 2019 | 3 | Mammals | 5,912 |
+| Birds -- Jetz et al. 2012 | 1 | Birds | 9,993 x 1,000 trees |
+| Birds -- McTavish et al. 2025 | 4 | Birds | 9,183-10,824 |
+| Frogs -- Portik et al. 2023 | 3 | Frogs | 5,326 |
+| Fish -- Rabosky et al. 2018 | 3 | Ray-finned fish | 11,638-31,516 |
+| Plants -- Smith & Brown 2018 | 6 | Seed plants | 79,874-359,536 |
+| Tetrapods -- Condamine et al. 2019 | 218 | Tetrapod families | 10-680 |
+| Amphibians -- Jetz & Pyron 2018 | 2 | Amphibians | 4,062-7,239 |
+| Squamates -- Pyron 2013 & Tonini 2016 | 4 | Squamates | 4,162-9,755 |
+| **Total** | **247** | | |
 
 ---
 
