@@ -4,8 +4,9 @@ A curated collection of published, empirical phylogenetic trees inferred from
 molecular data. All trees have **species as leaves** and come from peer-reviewed
 studies widely used in comparative biology.
 
-**247 tree files** across 9 studies covering mammals, birds, frogs, fish, squamates,
-amphibians, and seed plants.
+**274 tree files** across 15 studies covering mammals, birds, frogs, fish, squamates,
+amphibians, seed plants, butterflies, ferns, corals, insects, sharks, bacteria,
+and archaea.
 
 ## Quick start
 
@@ -43,8 +44,14 @@ and diamonds: class/division/order-level trees from other studies.
 7. [Tetrapod Families -- Condamine et al. 2019](#7-tetrapod-families----condamine-et-al-2019)
 8. [Amphibians -- Jetz & Pyron 2018](#8-amphibians-all-species----jetz--pyron-2018)
 9. [Squamates -- Pyron 2013 & Tonini 2016](#9-squamates----pyron-et-al-2013--tonini-et-al-2016)
-10. [Summary](#summary)
-11. [Reading Trees in R and Python](#reading-trees-in-r-and-python)
+10. [Butterflies -- Kawahara et al. 2023](#10-butterflies----kawahara-et-al-2023)
+11. [Ferns -- Nitta et al. 2022](#11-ferns----nitta-et-al-2022)
+12. [Corals -- 2025](#12-corals----2025)
+13. [Insects -- Chesters 2017 & 2023](#13-insects----chesters-2017--2023)
+14. [Sharks & Rays -- Stein et al. 2018](#14-sharks--rays----stein-et-al-2018)
+15. [Bacteria & Archaea -- GTDB 2025](#15-bacteria--archaea----gtdb-2025)
+16. [Summary](#summary)
+17. [Reading Trees in R and Python](#reading-trees-in-r-and-python)
 
 ---
 
@@ -461,6 +468,129 @@ and diamonds: class/division/order-level trees from other studies.
 
 ---
 
+## 10. Butterflies -- Kawahara et al. 2023
+
+**3 files | 3.7 MB**
+
+**Citation:** Kawahara AY et al. 2023. A global phylogeny of butterflies reveals their evolutionary history, ancestral hosts and biogeographic origins. *Nature Ecology & Evolution* 7: 903-913. https://doi.org/10.1038/s41559-023-02041-9
+
+**Source:** https://doi.org/10.6084/m9.figshare.21774899
+
+| File | Format | Tips | Description |
+|------|--------|------|-------------|
+| `butterflies/kawahara2023_butterfly_dated_2244sp.tre` | Nexus | 2,258 | Time-calibrated (treePL, crown 142 Ma) |
+| `butterflies/kawahara2023_butterfly_ML_quartet.tre` | Newick | 2,287 | ML tree with quartet sampling support |
+| `butterflies/kawahara2023_butterfly_revbayes_rates.tre` | Nexus | 2,248 | RevBayes diversification rates tree |
+
+**Methods:** 391 nuclear loci from ~2,300 butterfly species across 90 countries. ML inference, time-calibrated with treePL. Covers 92% of all butterfly genera.
+
+---
+
+## 11. Ferns -- Nitta et al. 2022
+
+**4 files**
+
+**Citation:** Nitta JH, Schuettpelz E, Ramírez-Barahona S, Iwasaki W. 2022. An open and continuously updated fern tree of life. *Frontiers in Plant Science* 13: 909768. https://doi.org/10.3389/fpls.2022.909768
+
+**Source:** https://github.com/fernphy/ftol_data
+
+| File | Format | Tips | Description |
+|------|--------|------|-------------|
+| `ferns/ftol_sanger_con_dated.tre` | Newick | 6,234 | Consensus, time-calibrated (crown 475 Ma) |
+| `ferns/ftol_sanger_ml_dated.tre` | Newick | 6,234 | ML tree, time-calibrated (crown 475 Ma) |
+| `ferns/ftol_sanger_con.tre` | Newick | 6,234 | Consensus (undated) |
+| `ferns/ftol_plastome_con.tre` | Newick | 1,057 | Plastome-only consensus |
+
+**Methods:** Automated pipeline combining plastome sequences with commonly sequenced plastid regions. Continuously updated from GenBank. Taxonomy follows PPG I.
+
+---
+
+## 12. Corals -- 2025
+
+**2 files**
+
+**Citation:** A global coral phylogeny reveals resilience and vulnerability through deep time. 2025. *Nature*. https://doi.org/10.1038/s41586-025-09615-6
+
+**Source:** https://doi.org/10.6084/m9.figshare.29242487
+
+| File | Format | Tips | Description |
+|------|--------|------|-------------|
+| `corals/coral_scleractinia_mcc.nex` | Nexus | 289 | MCC tree (time-calibrated, crown 573 Ma) |
+| `corals/coral_scleractinia_PL.nwk` | Newick | 289 | Penalized likelihood dated tree |
+
+**Methods:** Hybrid-capture phylogenomics of Scleractinia (stony corals). Hundreds of newly sequenced taxa. Time-calibrated with BEAST.
+
+---
+
+## 13. Insects -- Chesters 2017 & 2023
+
+**5 files | 5.3 MB**
+
+**Citation (2017):** Chesters D. 2017. Construction of a species-level tree of life for the insects and utility in taxonomic profiling. *Systematic Biology* 66(3): 426-439. https://doi.org/10.1093/sysbio/syw099
+
+**Dryad:** https://datadryad.org/dataset/doi:10.5061/dryad.27114
+
+**Citation (2023):** Chesters D et al. 2023. Launching insectphylo.org; a new hub facilitating construction and use of synthesis molecular phylogenies of insects. *Molecular Ecology Resources*. https://doi.org/10.1111/1755-0998.13817
+
+**Dryad:** https://datadryad.org/dataset/doi:10.5061/dryad.rfj6q57f6
+
+| File | Format | Tips | Description |
+|------|--------|------|-------------|
+| `insects/chesters2017_insecta_species_level.nwk` | Newick | 49,338 | Species-level ML tree |
+| `insects/chesters2017_insecta_processed.nwk` | Newick | 49,337 | Processed tree (ultrametric) |
+| `insects/chesters2023_insecta_synth.nwk` | Newick | 1,159 | Synthesis phylogeny |
+| `insects/chesters2023_diptera_synth.nwk` | Newick | 3,087 | Diptera synthesis phylogeny |
+| `insects/aquatic_insects_EPTO_supertree.tre` | Newick | 1,192 | Aquatic insects supertree (genus-level, crown 427 Ma) |
+
+**Note:** The aquatic insect tree has genera as tips, not species. Chesters datasets require manual download from Dryad.
+
+---
+
+## 14. Sharks & Rays -- Stein et al. 2018
+
+**9 files | 1.8 GB**
+
+**Citation:** Stein RW, Mull CG, Kuhn TS, Aschliman NC, Davidson LNK, Joy JB, Smith GJ, Dulvy NK, Mooers AO. 2018. Global priorities for conserving the evolutionary history of sharks, rays and chimaeras. *Nature Ecology & Evolution* 2: 288-298. https://doi.org/10.1038/s41559-017-0448-4
+
+**Source:** https://vertlife.org/phylosubsets/ (download via web app)
+
+| File | Format | Tips | Description |
+|------|--------|------|-------------|
+| `sharks/610.tree.10Cal.RAxML.BS.nex` | Nexus | 610 | RAxML ML tree with bootstrap |
+| `sharks/1.cal.tree.nex` | Nexus | 1,192 x 10,000 | Full posterior, 1 fossil calibration (crown 349 Ma) |
+| `sharks/10.cal.tree.nex` | Nexus | 1,192 x 10,000 | Full posterior, 10 fossil calibrations |
+| `sharks/Chond.10Cal.10kTreeSet.tre` | Newick | 1,192 x 10,000 | 10-calibration tree set |
+| `sharks/Chond.1Cal.10kTreeSet.tre` | Newick | 1,192 x 10,000 | 1-calibration tree set |
+| `sharks/Chond.610sp.10Cal.500TreeSet.tre` | Newick | 610 x 500 | 610sp subset, 10 calibrations |
+| `sharks/Chond.610sp.1Cal.500TreeSet.tre` | Newick | 610 x 500 | 610sp subset, 1 calibration |
+| `sharks/Chondrichthyan.610sp.10_fossil_Calibration.500treePLtrees.nex` | Nexus | 610 x 500 | treePL dated |
+| `sharks/Chondrichthyan.610sp.1_fossil_Calibration.500treePLtrees.nex` | Nexus | 610 x 500 | treePL dated |
+
+**Methods:** 610-species molecular phylogeny (supermatrix), extended to all 1,192 chondrichthyan species via taxonomic imputation. Time-calibrated with treePL.
+
+**Note:** Download from VertLife requires the web app. Files are very large (1.8 GB total).
+
+---
+
+## 15. Bacteria & Archaea -- GTDB 2025
+
+**2 files | 5.8 MB**
+
+**Citation:** Parks DH et al. 2025. GTDB release 10: a complete and systematic taxonomy for 715,230 bacterial and 17,245 archaeal genomes. *Nucleic Acids Research*. https://doi.org/10.1093/nar/gkaf1040
+
+**Source:** https://gtdb.ecogenomic.org/
+
+| File | Format | Tips | Description |
+|------|--------|------|-------------|
+| `bacteria/bac120.tree` | Newick | 136,646 | Bacterial species cluster representatives |
+| `bacteria/ar53.tree` | Newick | 6,968 | Archaeal species cluster representatives |
+
+**Methods:** Genome trees inferred from concatenated marker proteins (120 for bacteria, 53 for archaea). Each tip is a species cluster representative genome. Not time-calibrated.
+
+**Note:** Tips are genome accession IDs (e.g., RS_GCF_016650635.1), not traditional species names. Use GTDB taxonomy files to map to species names.
+
+---
+
 ## Other Notable Databases
 
 ### Insects -- Chesters 2023
@@ -494,7 +624,13 @@ Trees available for Insecta (53,596 sp), Coleoptera (2,639), Lepidoptera (11,001
 | Tetrapods -- Condamine et al. 2019 | 218 | Tetrapod families | 10-680 |
 | Amphibians -- Jetz & Pyron 2018 | 2 | Amphibians | 4,062-7,239 |
 | Squamates -- Pyron 2013 & Tonini 2016 | 4 | Squamates | 4,162-9,755 |
-| **Total** | **247** | | |
+| Butterflies -- Kawahara et al. 2023 | 3 | Butterflies | 2,248-2,287 |
+| Ferns -- Nitta et al. 2022 | 4 | Ferns | 1,057-6,234 |
+| Corals -- 2025 | 2 | Scleractinia | 289 |
+| Insects -- Chesters 2017 & 2023 | 5 | Insects | 1,159-49,338 |
+| Sharks -- Stein et al. 2018 | 9 | Chondrichthyes | 610-1,192 |
+| Bacteria & Archaea -- GTDB 2025 | 2 | Prokaryotes | 6,968-136,646 |
+| **Total** | **274** | | |
 
 ---
 
