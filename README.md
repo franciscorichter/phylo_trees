@@ -4,9 +4,10 @@ A curated collection of published, empirical phylogenetic trees inferred from
 molecular data. All trees have **species as leaves** and come from peer-reviewed
 studies widely used in comparative biology.
 
-**274 tree files** across 15 studies covering mammals, birds, frogs, fish, squamates,
+**325 tree files** across 26 studies covering mammals, birds, frogs, fish, squamates,
 amphibians, seed plants, butterflies, ferns, corals, insects, sharks, bacteria,
-and archaea.
+archaea, bees, spiders, turtles, primates, crustaceans, bryophytes, nematodes,
+echinoderms, and all of life (Open Tree of Life).
 
 ## Quick start
 
@@ -50,8 +51,18 @@ and diamonds: class/division/order-level trees from other studies.
 13. [Insects -- Chesters 2017 & 2023](#13-insects----chesters-2017--2023)
 14. [Sharks & Rays -- Stein et al. 2018](#14-sharks--rays----stein-et-al-2018)
 15. [Bacteria & Archaea -- GTDB 2025](#15-bacteria--archaea----gtdb-2025)
-16. [Summary](#summary)
-17. [Reading Trees in R and Python](#reading-trees-in-r-and-python)
+16. [Bees -- BeeTree of Life 2023](#16-bees----beetree-of-life-2023)
+17. [Spiders -- Garrison et al. 2016](#17-spiders----garrison-et-al-2016)
+18. [Turtles -- Thomson et al. 2021](#18-turtles----thomson-et-al-2021)
+19. [Primates -- 10kTrees Version 3](#19-primates----10ktrees-version-3)
+20. [Crustaceans -- Wolfe et al. 2019](#20-crustaceans----wolfe-et-al-2019)
+21. [Bryophytes -- Bechteler et al. 2023](#21-bryophytes----bechteler-et-al-2023)
+22. [Nematodes -- 2025 Systematic Biology](#22-nematodes----2025-systematic-biology)
+23. [Echinoderms -- Mongiardino Koch & Thompson 2022](#23-echinoderms----mongiardino-koch--thompson-2022)
+24. [Insects (insectphylo.org) -- Chesters 2023-2026](#24-insects-insectphyloorg----chesters-2023-2026)
+25. [Open Tree of Life v16.1](#25-open-tree-of-life-v161)
+26. [Summary](#summary)
+27. [Reading Trees in R and Python](#reading-trees-in-r-and-python)
 
 ---
 
@@ -591,6 +602,220 @@ and diamonds: class/division/order-level trees from other studies.
 
 ---
 
+## 16. Bees -- BeeTree of Life 2023
+
+**2 files | 384 MB**
+
+**Citation:** BeeTree of Life. 2023. A supermatrix phylogeny of the world's bees. http://beetreeoflife.org/
+
+**Source:** http://beetreeoflife.org/downloads/
+
+| File | Format | Tips | Description |
+|------|--------|------|-------------|
+| `bees/beetree2023_chronograms_1001.nwk` | Newick | 4,586 x 1,001 trees | Time-calibrated chronograms |
+| `bees/beetree2023_520bootstrap.phy` | Newick | 4,586 x 520 trees | Bootstrap trees |
+
+**Methods:** Supermatrix of all available bee sequence data as of mid-2023. IQ-TREE ML inference, dated with treePL.
+
+---
+
+## 17. Spiders -- Garrison et al. 2016
+
+**3 files**
+
+**Citation:** Garrison NL et al. 2016. Spider phylogenomics: untangling the Spider Tree of Life. PeerJ 4: e1719. https://doi.org/10.7717/peerj.1719
+
+**Source:** https://zenodo.org/records/3941712
+
+| File | Format | Tips | Description |
+|------|--------|------|-------------|
+| `spiders/garrison2016_spider_dated_1456sp.tre` | Newick | 1,456 | Time-calibrated (UCE + transcriptomes) |
+| `spiders/garrison2016_spider_dated_alt_1453sp.tre` | Newick | 1,453 | Alternative calibration |
+| `spiders/garrison2016_spider_ML_964sp.tre` | Newick | 964 | ML tree (backbone only) |
+
+**Methods:** Phylogenomics from ultraconserved elements and transcriptomes.
+
+---
+
+## 18. Turtles -- Thomson et al. 2021
+
+**4 files | 3 MB**
+
+**Citation:** Thomson RC, Spinks PQ, Shaffer HB. 2021. A global phylogeny of turtles reveals a burst of climate-associated diversification on continental margins. PNAS 118(7): e2012215118. https://doi.org/10.1073/pnas.2012215118
+
+**Dryad:** https://datadryad.org/dataset/doi:10.5061/dryad.jh9w0vt8w
+
+| File | Format | Tips | Description |
+|------|--------|------|-------------|
+| `turtles/thomson2021_turtle_mcc_294sp.tre` | Nexus | 593 | MCC tree |
+| `turtles/thomson2021_turtle_consensus_294sp.tre` | Nexus | consensus tree | Consensus tree |
+| `turtles/thomson2021_turtle_100posterior.tre` | Nexus | 100 posterior trees | 100 posterior trees |
+| `turtles/thomson2021_turtle_bd_mcc.tre` | Nexus | Birth-death MCC | Birth-death MCC |
+
+**Methods:** 13 loci for 294 species (80% of all turtles, 98% of genera). Bayesian inference (BEAST).
+
+**Note:** Requires manual download from Dryad.
+
+---
+
+## 19. Primates -- 10kTrees Version 3
+
+**2 files**
+
+**Citation:** Arnold C, Matthews LJ, Nunn CL. 2010. The 10kTrees Website: A New Online Resource for Primate Phylogeny. Evolutionary Anthropology 19: 114-118.
+
+**Source:** https://10ktrees.nunn-lab.org/
+
+| File | Format | Tips | Description |
+|------|--------|------|-------------|
+| `primates/10ktrees_primates_consensus_v3.nex` | Nexus | 301 | Bayesian consensus tree |
+| `primates/10ktrees_primates_100posterior_v3.nex` | Nexus | 301 x 100 trees | Posterior sample |
+
+**Methods:** Bayesian inference from molecular data for all recognized primate species. Interactive web download.
+
+**Note:** Requires interactive download from 10kTrees website.
+
+---
+
+## 20. Crustaceans -- Wolfe et al. 2019
+
+**3 files**
+
+**Citation:** Wolfe JM et al. 2019. A phylogenomic framework, evolutionary timeline and genomic resources for comparative studies of decapod crustaceans. Proc R Soc B 286: 20190079. https://doi.org/10.1098/rspb.2019.0079
+
+**Dryad:** https://datadryad.org/dataset/doi:10.5061/dryad.k7505mn
+
+| File | Format | Tips | Description |
+|------|--------|------|-------------|
+| `crustaceans/wolfe2019_decapoda_bayesian_94sp.tre` | Newick | 95 | Bayesian (CAT-GTR) |
+| `crustaceans/wolfe2019_decapoda_ML_149sp.tre` | Newick | 95 | ML tree |
+| `crustaceans/wolfe2019_decapoda_astral_species.tre` | Newick | species tree | Species tree (ASTRAL) |
+
+**Methods:** 410 loci from anchored hybrid enrichment, 94 species across 58 of 179 decapod families.
+
+**Note:** Requires manual download from Dryad.
+
+---
+
+## 21. Bryophytes -- Bechteler et al. 2023
+
+**3 files**
+
+**Citation:** Bechteler J et al. 2023. Comprehensive phylogenomic time tree of bryophytes reveals deep relationships and uncovers gene incongruences in the last 500 million years of diversification. American Journal of Botany 110: e16249. https://doi.org/10.1002/ajb2.16249
+
+**Dryad:** https://datadryad.org/stash/dataset/doi:10.5061/dryad.3j9kd51qm
+
+| File | Format | Tips | Description |
+|------|--------|------|-------------|
+| `bryophytes/goffinet2023_bryophyte_dated_531sp.tre` | Newick | 533 | Time-calibrated (r8s) |
+| `bryophytes/goffinet2023_bryophyte_astral_531sp.tre` | Newick | 533 | ASTRAL species tree |
+| `bryophytes/goffinet2023_bryophyte_raxml_531sp.tre` | Newick | 533 | RAxML ML tree |
+
+**Methods:** 405 exons (228 nuclear genes), 531 species from 52 of 54 bryophyte orders. Time-calibrated with 29 fossil calibrations.
+
+**Note:** Requires manual download from Dryad.
+
+---
+
+## 22. Nematodes -- 2025 Systematic Biology
+
+**4 files**
+
+**Citation:** Phylogenomic Insights into the Evolution and Origin of Nematoda. 2025. Systematic Biology 74(3): 349. https://doi.org/10.1093/sysbio/syae065
+
+**Dryad:** https://datadryad.org/stash/dataset/doi:10.5061/dryad.b2rbnzsnt
+
+| File | Format | Tips | Description |
+|------|--------|------|-------------|
+| `nematodes/nematoda_50p_aa_ML.tre` | Newick | 166 | ML tree (amino acid, 50% occupancy) |
+| `nematodes/nematoda_50p_nuc_ML.tre` | Newick | 166 | ML tree (nucleotide, 50%) |
+| `nematodes/nematoda_50p_aa_astral.tre` | Newick | 166 | ASTRAL species tree |
+| `nematodes/nematoda_70p_aa_ML.tre` | Newick | 166 | ML tree (amino acid, 70% occupancy) |
+
+**Methods:** 60 newly sequenced genomes across 8 nematode orders. 156 Nematoda + 10 outgroups.
+
+**Note:** Requires manual download from Dryad.
+
+---
+
+## 23. Echinoderms -- Mongiardino Koch & Thompson 2022
+
+**1 file**
+
+**Citation:** Mongiardino Koch N, Thompson JR. 2022. Phylogenomic analyses of echinoid diversification prompt a re-evaluation of their fossil record. eLife 11: e72460. https://doi.org/10.7554/eLife.72460
+
+**Dryad:** https://datadryad.org/stash/dataset/doi:10.5061/dryad.brv15dv9t
+
+| File | Format | Tips | Description |
+|------|--------|------|-------------|
+| `echinoderms/koch2022_echinoid_chronogram.tre` | Newick | 66 | Time-calibrated chronogram (crown 571 Ma) |
+
+**Methods:** 18 novel genomes/transcriptomes, near-complete sampling of major echinoderm lineages. Bayesian dating.
+
+**Note:** Requires manual download from Dryad.
+
+---
+
+## 24. Insects (insectphylo.org) -- Chesters 2023-2026
+
+**24 files**
+
+**Citation:** Chesters D et al. 2023. Launching insectphylo.org; a new hub facilitating construction and use of synthesis molecular phylogenies of insects. Molecular Ecology Resources. https://doi.org/10.1111/1755-0998.13817
+
+**Source:** https://insectphylo.org/download-a-synthesis-phylogeny/
+
+| File | Format | Tips | Description |
+|------|--------|------|-------------|
+| `insects/insectphylo_insecta_v2.nwk` | Newick | 53,596 | All Insecta |
+| `insects/insectphylo_lepidoptera_v2.nwk` | Newick | 11,001 | Butterflies & moths |
+| `insects/insectphylo_hymenoptera_v1.nwk` | Newick | 3,928 | Ants, bees, wasps |
+| `insects/insectphylo_diptera_v1.nwk` | Newick | -- | Flies |
+| `insects/insectphylo_coleoptera_v1.nwk` | Newick | 2,639 | Beetles |
+| `insects/insectphylo_hemiptera_v1.nwk` | Newick | -- | True bugs |
+| `insects/insectphylo_orthoptera_v1.nwk` | Newick | -- | Grasshoppers, crickets |
+| `insects/insectphylo_odonata_v1.nwk` | Newick | -- | Dragonflies |
+| `insects/insectphylo_trichoptera_v1.nwk` | Newick | -- | Caddisflies |
+| `insects/insectphylo_blattodea_v1.nwk` | Newick | -- | Cockroaches, termites |
+| `insects/insectphylo_plecoptera_v1.nwk` | Newick | -- | Stoneflies |
+| `insects/insectphylo_neuropterida_v1.nwk` | Newick | -- | Lacewings |
+| `insects/insectphylo_thysanoptera_v1.nwk` | Newick | -- | Thrips |
+| `insects/insectphylo_psocodea_v1.nwk` | Newick | -- | Barklice, booklice |
+| `insects/insectphylo_ephemeroptera_v1.nwk` | Newick | -- | Mayflies |
+| `insects/insectphylo_mecoptera_v1.nwk` | Newick | -- | Scorpionflies |
+| `insects/insectphylo_mantodea_v1.nwk` | Newick | -- | Mantises |
+| `insects/insectphylo_siphonaptera_v1.nwk` | Newick | -- | Fleas |
+| `insects/insectphylo_phasmatodea_v1.nwk` | Newick | -- | Stick insects |
+| `insects/insectphylo_dermaptera_v1.nwk` | Newick | -- | Earwigs |
+| `insects/insectphylo_strepsiptera_v1.nwk` | Newick | -- | Twisted-wing parasites |
+| `insects/insectphylo_embioptera_v1.nwk` | Newick | -- | Webspinners |
+| `insects/insectphylo_archaeognatha_v1.nwk` | Newick | -- | Bristletails |
+| `insects/insectphylo_zygentoma_v1.nwk` | Newick | -- | Silverfish |
+
+**Methods:** Synthesis molecular phylogenies from GenBank data. Continuously updated.
+
+---
+
+## 25. Open Tree of Life v16.1
+
+**4 files | 119 MB**
+
+**Citation:** Hinchliff CE et al. 2015. Synthesis of phylogeny and taxonomy into a comprehensive tree of life. PNAS 112: 12764-12769. https://doi.org/10.1073/pnas.1423041112
+
+**Source:** https://files.opentreeoflife.org/synthesis/opentree16.1/
+
+| File | Format | Tips | Description |
+|------|--------|------|-------------|
+| `opentree/labelled_supertree/labelled_supertree.tre` | Newick | ~2,386,000 | Full synthesis tree (OTT IDs) |
+| `opentree/labelled_supertree/labelled_supertree_ottnames.tre` | Newick | ~2,386,000 | Full synthesis tree (species names) |
+| `opentree/grafted_solution/grafted_solution.tre` | Newick | ~160,000 | Phylogenetically-resolved portion |
+| `opentree/grafted_solution/grafted_solution_ottnames.tre` | Newick | ~160,000 | Resolved portion (species names) |
+
+**Methods:** Supertree synthesis from 2,064 published phylogenetic studies via the Open Tree synthesis algorithm. NOT an empirical tree -- it's a synthesis/backbone connecting all published phylogenies.
+
+**Note:** This is a synthetic tree, not inferred directly from data. Useful as a backbone for connecting empirical trees.
+
+---
+
 ## Other Notable Databases
 
 ### Insects -- Chesters 2023
@@ -616,7 +841,7 @@ Trees available for Insecta (53,596 sp), Coleoptera (2,639), Lepidoptera (11,001
 | Dataset | Files | Taxa | Tips |
 |---------|-------|------|------|
 | Mammals -- Upham et al. 2019 | 3 | Mammals | 5,912 |
-| Birds -- Jetz et al. 2012 | 1 | Birds | 9,993 x 1,000 trees |
+| Birds -- Jetz et al. 2012 | 1 | Birds | 9,993 x 1,000 |
 | Birds -- McTavish et al. 2025 | 4 | Birds | 9,183-10,824 |
 | Frogs -- Portik et al. 2023 | 3 | Frogs | 5,326 |
 | Fish -- Rabosky et al. 2018 | 3 | Ray-finned fish | 11,638-31,516 |
@@ -630,7 +855,18 @@ Trees available for Insecta (53,596 sp), Coleoptera (2,639), Lepidoptera (11,001
 | Insects -- Chesters 2017 & 2023 | 5 | Insects | 1,159-49,338 |
 | Sharks -- Stein et al. 2018 | 9 | Chondrichthyes | 610-1,192 |
 | Bacteria & Archaea -- GTDB 2025 | 2 | Prokaryotes | 6,968-136,646 |
-| **Total** | **274** | | |
+| Bees -- BeeTree 2023 | 2 | Bees | 4,586 |
+| Spiders -- Garrison et al. 2016 | 3 | Araneae | 964-1,456 |
+| Turtles -- Thomson et al. 2021 | 4 | Testudines | 593 |
+| Primates -- 10kTrees v3 | 2 | Primates | 301 |
+| Crustaceans -- Wolfe et al. 2019 | 3 | Decapoda | 95 |
+| Bryophytes -- Bechteler et al. 2023 | 3 | Bryophytes | 533 |
+| Nematodes -- 2025 | 4 | Nematoda | 166 |
+| Echinoderms -- Koch & Thompson 2022 | 1 | Echinodermata | 66 |
+| Insects (insectphylo.org) -- Chesters | 24 | Insect orders | 53,596 (all) |
+| Open Tree of Life v16.1 | 4 | All life | ~2,386,000 |
+| Angiosperms -- Zuntini et al. 2024 (Kew) | 2 | Angiosperms | 10,709 |
+| **Total** | **325** | | |
 
 ---
 
